@@ -1,0 +1,217 @@
+:root {
+    --originalColor: #5d5d5d;
+    --originalBackground: rgb(196, 183, 183);
+    --newColor: #f02a2a;
+    --newBackground: rgba(196, 183, 183, 0.767);
+    --gridBackground: rgb(212, 212, 212);
+    --gridExternalBorder: rgb(50, 50, 56);
+    --gridInternalBorder: rgb(170, 182, 207);
+}
+
+.newGrid {
+    background-color: var(--gridBackground);
+    border: 3px solid var(--gridExternalBorder);
+}
+
+.cardTitle {
+    padding: 10px;
+}
+
+.cardDescription {
+    background-color: var(--gridBackground);
+    border-top: 1px solid var(--gridInternalBorder);
+    text-align: center;
+    text-wrap: wrap;
+    align-content: center;
+    margin: 0px;
+}
+
+.cardAction {
+    margin: 0px;
+    text-align: center;
+    border-left: 1px solid var(--gridInternalBorder);
+    border-top: 1px solid var(--gridInternalBorder);
+}
+
+.cardContainer {
+    display: flex;
+    background-color: rgb(212, 212, 212);
+    border-left: 1px solid var(--gridInternalBorder)
+}
+
+.newGrid1 {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.gridTitle1 {
+    grid-column: 1/ span 2
+}
+
+.cardTitle1 {
+    border-right: 3px solid black;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    background-color: var(--gridBackground);
+    margin: 0px 150px 0px 150px;
+    text-align: center;
+    grid-column: 1/ span 2
+}
+
+.cardTitle1 h2 {
+    margin: 0;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.codeCSS {
+    display: block;
+    color: black;
+    margin: 0px;
+    font-family: monospace;
+    white-space: pre;
+    border-left: 1px solid var(--gridInternalBorder)
+}
+
+.emphasis {
+    color: rgb(194, 50, 50);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------------- */
+/* Card Colors */
+.card {
+    margin: 50px;
+    border-radius: 20px !important;
+}
+
+.cardOriginal {
+    background-color: var(--originalBackground);
+    border: 4px dashed var(--originalColor)!important;
+}
+
+.cardNew {
+    background-color: var(--newBackground);
+    border: 4px dashed var(--newColor)!important;
+    position: absolute !important;
+}
+
+/* SVG Colors */
+.SVG {
+    height: 150px;
+    width: 150px;
+}
+
+.SVGOriginal {
+    fill: var(--originalColor);
+    stroke: var(--originalColor);
+}
+
+.SVGNew {
+    fill: var(--newColor);
+    stroke: var(--newColor);
+}
+
+/* ANIMATION DESCRIPTIONS */
+#translateX {
+    transform: translateX(100px);
+}
+
+#translateY {
+    transform: translateY(25px);
+}
+
+#translate {
+    transform: translate(100px, 25px);
+}
+
+#rotate {
+    transform: rotate(45deg);
+}
+
+#scaleX {
+    transform: scaleX(1.2);
+}
+
+#scaleY {
+    transform: scaleY(.8);
+}
+
+#scale {
+    transform: scale(1.2, .8);
+}
+
+#skewX {
+    transform: skewX(45deg);
+}
+
+#skewY {
+    transform: skewY(-20deg);
+}
+
+#skew {
+    transform: skew(45deg, -20deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 3D Style */
+.card3dContainer {
+    height: 500px;
+    width: 500px;
+    border: 3px solid black;
+    margin: 20px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.x {
+    height: 494px;
+    width: 494px;
+    background-color: blue;
+    position: absolute;
+    transform: rotateX(90deg);
+    opacity: .2;
+    transform-style: preserve-3d;
+
+}
+
+.y {
+    height: 494px;
+    width: 494px;
+    background-color: yellowgreen;
+    position: absolute;
+    transform: rotateY(80deg);
+    opacity: .2;
+    transform-style: preserve-3d;
+}
+
+.z {
+    height: 494px;
+    width: 494px;
+    background-color: red;
+    position: absolute;
+    opacity: .2;
+    transform-style: preserve-3d;
+}
+
+.axis {
+    position: absolute;
+    transform: rotateX(30deg) rotateY(30deg);
+    transform-style: preserve-3d;
+}
+
