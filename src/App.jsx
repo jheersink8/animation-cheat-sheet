@@ -1,15 +1,16 @@
 import './assets/style.css';
 
 import React from 'react';
-import TwoDimensionalSheet from './Components/TwoDimensionalSheet';
+import TwoDimensionalGrid from './Components/TwoDimensionalGrid';
 
 
 function App() {
 
   return (
     <>
-      <TwoDimensionalSheet />
-    </>)
+      <TwoDimensionalGrid />
+    </>
+  )
 }
 
 export default App
