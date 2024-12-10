@@ -1,4 +1,4 @@
-export default function translateX({ col, position, value }) {
+export default function CodeTwoDimensional({ col, position, value }) {
     return (
         <code className={`col-${col} codeCSS`}>
             .selector {'{'}<br></br>

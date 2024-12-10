@@ -8,6 +8,10 @@
     --gridInternalBorder: rgb(170, 182, 207);
 }
 
+body{
+    background-color: #242424 !important;
+}
+
 .newGrid {
     background-color: var(--gridBackground);
     border: 3px solid var(--gridExternalBorder);
@@ -58,19 +62,17 @@
 .card {
     margin: 50px;
     border-radius: 20px !important;
-
 }
 
 .cardOriginal {
-    background-color: var(--originalBackground);
+    background-color: var(--originalBackground) !important;
     border: 4px dashed var(--originalColor) !important;
 }
 
 .cardNew {
-    background-color: var(--newBackground);
+    background-color: var(--newBackground) !important;
     border: 4px dashed var(--newColor) !important;
     position: absolute !important;
-    opacity: .6;
 }
 
 /* SVG Colors */
