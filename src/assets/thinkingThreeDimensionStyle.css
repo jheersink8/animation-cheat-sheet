@@ -1,0 +1,36 @@
+.parent3d {
+    height: 500px;
+    width: 500px;
+    border: 3px solid black;
+    margin: 30px;
+}
+
+
+#object1 {
+    height: 140px;
+    width: 140px;
+    background-color: red;
+    position: relative;
+    left: 100px;
+    top: 290px;
+}
+
+#object2 {
+    height: 140px;
+    width: 160px;
+    background-color: blue;
+    transform: rotateX(70deg);
+    position: relative;
+    left: 290px;
+    top: 30px;
+}
+
+#object3 {
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    background-color: green;
+    position: relative;
+    left: 100px;
+    top: -210px;
+}
