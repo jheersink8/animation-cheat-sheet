@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <TwoDimensionalGrid />
+      {/* <TwoDimensionalGrid /> */}
       <ThinkingThreeDimensions />
       {/* <ThreeDimensionalGrid /> */}
     </>
