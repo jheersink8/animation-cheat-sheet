@@ -3,15 +3,14 @@
     width: 500px;
     border: 3px solid black;
     margin: 0px;
-    background-color: rgb(189, 179, 179);
-    position: relative;
+    background-color: rgba(189, 179, 179, 0.671);
 }
 
 #p-parent {
     margin: 0px;
 }
 
-#child1 {
+.child1 {
     height: 140px;
     width: 140px;
     background-color: red;
@@ -23,7 +22,7 @@
     top: 80px;
 }
 
-#child2 {
+.child2 {
     height: 80px;
     width: 160px;
     background-color: blue;
@@ -35,7 +34,7 @@
     top: 200px;
 }
 
-#child3 {
+.child3 {
     height: 150px;
     width: 150px;
     border-radius: 100px;
@@ -46,4 +45,35 @@
     position: absolute;
     left: 130px;
     top: 290px;
+}
+
+.child1X {
+    transform: translateZ(-170px);
+}
+
+.child2X {
+    transform: translateZ(100px);
+}
+
+.child3X {
+    transform: translateZ(83px);
+}
+
+.dottedLine {
+    border-bottom: 3px dotted black;
+    width: 24%;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+}
+
+.perspectiveG {
+    perspective: 1000px;
+    position: relative;
+}
+
+.perspectiveP {
+    perspective: 1000px;
+    transform: rotateY(-75deg) scale(.75) translateZ(-150px);
+    transform-style: preserve-3d;
 }

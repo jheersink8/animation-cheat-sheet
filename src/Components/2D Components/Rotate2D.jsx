@@ -12,7 +12,7 @@ export default function Rotate2D() {
 
           <SVGTwoDimensional col={12} position={"rotate"} center={"center"}/>
 
-          <CodeTwoDimensional col={12} position={"rotate"} value={"100px, 25px"} />
+          <CodeTwoDimensional col={12} position={"rotate"} value={"45deg"} />
 
         </div>
       </div>
