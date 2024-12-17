@@ -1,3 +1,30 @@
+.elementwith2D,
+.elementwith3D {
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+    background-color: rgb(46, 143, 43);
+    color: white;
+    font-weight: bold;
+    margin: 40px;
+    transition: transform 2s;
+}
+
+.hoverArea {
+    background-color: rgb(224, 189, 189);  
+    border-radius: 9px;
+    margin: 0px 100px 0px 100px;
+}
+
+.hoverArea:hover .elementwith2D, .hoverArea:hover .elementwith3D {
+    transform: rotateY(180deg);
+}
+
+
+
 .parent3d {
     height: 500px;
     width: 500px;
