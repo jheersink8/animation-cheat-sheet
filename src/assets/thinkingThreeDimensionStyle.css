@@ -14,12 +14,13 @@
 }
 
 .hoverArea {
-    background-color: rgb(224, 189, 189);  
+    background-color: rgb(224, 189, 189);
     border-radius: 9px;
     margin: 0px 100px 0px 100px;
 }
 
-.hoverArea:hover .elementwith2D, .hoverArea:hover .elementwith3D {
+.hoverArea:hover .elementwith2D,
+.hoverArea:hover .elementwith3D {
     transform: rotateY(180deg);
 }
 
@@ -103,4 +104,73 @@
     perspective: 1000px;
     transform: rotateY(-75deg) scale(.75) translateZ(-150px);
     transform-style: preserve-3d;
+}
+
+.otherHead {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.squareGrandparent {
+    perspective: 1000px;
+}
+
+.preserve {
+    transform-style: preserve-3d;
+}
+
+.squareAxis {
+    position: absolute;
+    width: 150px;
+    border-bottom: 3px dashed black;
+    transform: rotateZ(90deg);
+}
+
+.square {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 3s ease-in-out;
+    transform: rotateX(-10deg) rotateY(-20deg) rotateZ(0deg);
+}
+
+.squareSide {
+    height: 100px;
+    width: 100px;
+    opacity: .6;
+    position: absolute;
+    transition: transform 3s ease-in-out;
+}
+
+.top {
+    background-color: red;
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.bottom {
+    background-color: blue;
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+.front {
+    background-color: green;
+    transform: translateZ(50px);
+}
+
+.back {
+    background-color: yellow;
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+.left {
+    background-color: orange;
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.right {
+    background-color: purple;
+    transform: rotateY(270deg) translateZ(50px);
 }

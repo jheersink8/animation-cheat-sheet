@@ -44,7 +44,8 @@ function Step3Code() {
     return (
         <>
             <div className="col-12 codeCSS">
-
+                <p className="m-0" style={{ fontWeight: 700 }}>Explanation:</p>
+                <p>Once the perspective is established on the parent, objects can move freely in a true 3D environment. </p>
                 <p className="m-0" style={{ fontWeight: 700 }}>CSS:</p>
                 <code className='col-12' style={{ color: 'black' }}>
                     <span className="emphasis">.child1</span> {'{'}<br></br>
@@ -69,4 +70,45 @@ function Step3Code() {
     )
 }
 
-export { Introduction, Step1Code, Step2Code, Step3Code };
+function OtherNotes() {
+    return (
+        <div className="col-12 codeCSS">
+            <p className="m-0" style={{ fontWeight: 700 }}>Note:</p>
+            <p>You can create six sides and use rotate/translate transformations to position each side in 3D space to form a cube. If all six sides are placed inside a parent container, you can apply 3D transformations (like rotation) to the parent itself, which allows the cube to rotate as a whole, instead of modifying each side individually. </p>
+            <p style={{ textDecoration: 'underline' }}>To render the cube in a 3D environment:</p>
+            <p>1. The parent container must be wrapped inside a grandparent container that applies the perspective property. The perspective creates the illusion of depth, which is critical for 3D effects. </p>
+            <p>2. The parent container must have transform-style: preserve-3d applied. Without it, the parent will act like a flattened 2D layer, and the children (the cube's sides) will lose their 3D positioning and appear collapsed or isolated.</p>
+
+            <p style={{ fontWeight: 'bold' }}>TL;DR role of each element: </p>
+
+            <p><span style={{ textDecoration: 'underline' }}>Grandparent (the 3D space)</span>: Defines the perspective.</p>
+
+            <p><span style={{ textDecoration: 'underline' }}>Parent (the cube)</span>: Allows children to maintain 3D positioning with transform-style: preserve-3d.</p>
+
+            <p><span style={{ textDecoration: 'underline' }}>Children (the cube’s sides)</span>: Each side has its own transform (rotate + translate) to position it correctly in 3D space.</p>
+
+            <p className="m-0" style={{ fontWeight: 700 }}>CSS:</p>
+            <code className='col-12' style={{ color: 'black' }}>
+                .grandparent {'{'}<br></br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;perspective: 1000px;<br></br>
+                {'}'}
+            </code>
+            <br></br>
+            <code className='col-12' style={{ color: 'black' }}>
+                .parent {'{'}<br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span className="emphasis">transform-style: preserve-3d;</span><br></br>
+                {'}'}
+            </code>
+            <br></br>
+            <code className='col-12' style={{ color: 'black' }}>
+                .child(ren) {'{'}<br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span style={{ color: 'green' }}>//x6 (for each side)//</span><br></br>
+                &nbsp;&nbsp;&nbsp;&nbsp;transform: rotateY(XXdeg) translateZ(XXpx);<br></br>
+                {'}'}
+            </code>
+        </div>
+    )
+}
+
+export { Introduction, Step1Code, Step2Code, Step3Code, OtherNotes };
