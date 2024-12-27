@@ -1,5 +1,6 @@
 import './assets/style.css';
 import './assets/twoDimensionStyle.css';
+import './assets/threeDimensionalStyle.css';
 import './assets/thinkingThreeDimensionStyle.css';
 
 import React from 'react';
@@ -12,7 +13,7 @@ function App() {
   return (
     <>
       <TwoDimensionalGrid />
-      {/* <ThinkingThreeDimensions /> */}
+      <ThinkingThreeDimensions />
       <ThreeDimensionalGrid />
     </>
   )

@@ -7,7 +7,7 @@ export default function Rotate3D() {
             <div className="col-10 ">
                 <div className="row">
                     <h4 className="col-12 cardAction">Rotate()</h4>
-                    <SVGThreeDimensional />
+                    <SVGThreeDimensional col={12} position={"rotate3d"} />
                 </div>
             </div>
         </>

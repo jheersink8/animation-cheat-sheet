@@ -64,11 +64,13 @@ body {
 .card {
     margin: 50px;
     border-radius: 20px !important;
+
 }
 
 .cardOriginal {
     background-color: var(--originalBackground) !important;
     border: 4px dashed var(--originalColor) !important;
+
 }
 
 .cardNew {
@@ -77,91 +79,6 @@ body {
     position: absolute !important;
 }
 
-/* SVG Colors */
-.SVG {
-    height: 150px;
-    width: 150px;
-}
-
-.SVGOriginal {
-    fill: var(--originalColor);
-    stroke: var(--originalColor);
-}
-
-.SVGNew {
-    fill: var(--newColor);
-    stroke: var(--newColor);
-}
+/* 3D Styles */
 
 
-.grandparent3D {
-    perspective: 1000px;
-    border: 3px solid black;
-    height: 400px;
-    width: 400px;
-    overflow: hidden;
-    margin-bottom: 500px;
-    background-color: #969494;
-    position: relative;
-}
-
-.parent3D {
-    transform-style: preserve-3d;
-    transition: transform 1s ease-in-out;
-    transform: rotateX(7deg) rotateY(10deg);
-}
-
-.axis{
-    transform-style: preserve-3d;
-    position: absolute;
-}
-
-.xAxis {
-    width: 400px;
-    border-bottom: 3px dashed rgba(194, 50, 50, 0.8);
-    position: absolute;
-}
-
-.yAxis {
-    width: 400px;
-    border-bottom: 3px dashed rgba(192, 194, 50, 0.8);
-    position: absolute;
-    transform: rotateZ(90deg);
-}
-
-.zAxis {
-    width: 800px;
-    border-bottom: 3px dashed rgba(50, 194, 194, 0.8);
-    position: absolute;
-    transform: rotateY(90deg);
-}
-
-
-.xAxis, .yAxis, .zAxis {
-    transition: transform 3s ease-in-out;
-}
-
-
-
-
-.SVG3D {
-    height: 120px;
-    width: 120px;
-    
-}
-
-.card3D {
-    border-radius: 20px !important;
-    position: absolute;
-}
-
-.cardOriginal3D {
-    background-color: var(--originalBackground) !important;
-    border: 4px dashed var(--originalColor) !important;
-}
-
-.cardNew3D {
-    background-color: var(--newBackground) !important;
-    border: 4px dashed var(--newColor) !important;
-
-}

@@ -1,41 +1,41 @@
 /* TRANSLATION DESCRIPTIONS */
-#translateX {
+#translateX2d {
     transform: translateX(100px);
 }
 
-#translateY {
+#translateY2d {
     transform: translateY(25px);
 }
 
-#translate {
+#translate2d {
     transform: translate(100px, 25px);
 }
 
-#rotate {
+#rotate2d {
     transform: rotate(45deg);
 }
 
-#scaleX {
+#scaleX2d {
     transform: scaleX(1.2);
 }
 
-#scaleY {
+#scaleY2d {
     transform: scaleY(.8);
 }
 
-#scale {
+#scale2d {
     transform: scale(1.2, .8);
 }
 
-#skewX {
+#skewX2d {
     transform: skewX(45deg);
 }
 
-#skewY {
+#skewY2d {
     transform: skewY(-20deg);
 }
 
-#skew {
+#skew2d {
     transform: skew(45deg, -20deg);
 }
 

@@ -12,9 +12,9 @@ export default function Skew2D() {
           <h4 className="col-4 cardAction">SkewY()</h4>
           <h4 className="col-4 cardAction">Skew()</h4>
 
-          <SVGTwoDimensional col={4} position={"skewX"} center={"center"} />
-          <SVGTwoDimensional col={4} position={"skewY"} center={"center"} />
-          <SVGTwoDimensional col={4} position={"skew"} center={"center"} />
+          <SVGTwoDimensional col={4} position={"skewX2d"} center={"center"} />
+          <SVGTwoDimensional col={4} position={"skewY2d"} center={"center"} />
+          <SVGTwoDimensional col={4} position={"skew2d"} center={"center"} />
 
           <CodeTwoDimensional col={4} position={"skewX"} value={"45deg"} />
           <CodeTwoDimensional col={4} position={"skewY"} value={"-20deg"} />

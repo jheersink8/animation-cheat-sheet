@@ -12,9 +12,9 @@ export default function Translate2D() {
           <h4 className="col-4 cardAction">TranslateY()</h4>
           <h4 className="col-4 cardAction">Translate()</h4>
 
-          <SVGTwoDimensional col={4} position={"translateX"} />
-          <SVGTwoDimensional col={4} position={"translateY"} center={"center"} />
-          <SVGTwoDimensional col={4} position={"translate"} />
+          <SVGTwoDimensional col={4} position={"translateX2d"} />
+          <SVGTwoDimensional col={4} position={"translateY2d"} center={"center"} />
+          <SVGTwoDimensional col={4} position={"translate2d"} />
 
           <CodeTwoDimensional col={4} position={"translateX"} value={"100px"} />
           <CodeTwoDimensional col={4} position={"translateY"} value={"25px"} />
