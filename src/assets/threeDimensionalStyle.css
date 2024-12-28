@@ -1,5 +1,13 @@
 /* TRANSLATION DESCRIPTIONS */
 
-#rotate3d {
-    transform: rotate(45deg);
+#rotateX3d {
+    transform: rotateX(45deg);
+}
+
+#rotateY3d {
+    transform: rotateY(15deg);
+}
+
+#rotateZ3d {
+    transform: rotateZ(-25deg);
 }

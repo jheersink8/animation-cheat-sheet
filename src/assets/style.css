@@ -1,8 +1,4 @@
 :root {
-    --originalColor: #5d5d5d;
-    --originalBackground: rgb(196, 183, 183);
-    --newColor: #f02a2a;
-    --newBackground: rgba(196, 183, 183, 0.767);
     --gridBackground: rgb(212, 212, 212);
     --gridExternalBorder: rgb(50, 50, 56);
     --gridInternalBorder: rgb(170, 182, 207);
@@ -57,28 +53,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
-/* Card Colors */
-.card {
-    margin: 50px;
-    border-radius: 20px !important;
-
-}
-
-.cardOriginal {
-    background-color: var(--originalBackground) !important;
-    border: 4px dashed var(--originalColor) !important;
-
-}
-
-.cardNew {
-    background-color: var(--newBackground) !important;
-    border: 4px dashed var(--newColor) !important;
-    position: absolute !important;
-}
-
-/* 3D Styles */
 
 
