@@ -11,3 +11,15 @@
 #rotateZ3d {
     transform: rotateZ(-25deg);
 }
+
+#translateZ3d {
+    transform: translateZ(100px);
+}
+
+#translate3d {
+    transform: translate3d(-200px, 0px, 100px);
+}
+
+#combine3d {
+    transform: translateZ(80px) rotateX(-25deg)
+}

@@ -39,3 +39,6 @@
     transform: skew(45deg, -20deg);
 }
 
+#combine2d {
+    transform: translateX(65px) rotate(30deg)
+}

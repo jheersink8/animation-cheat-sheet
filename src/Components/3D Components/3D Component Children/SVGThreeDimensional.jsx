@@ -28,14 +28,14 @@ export default function SVGThreeDimensional({ col, position }) {
             margin: "50px",
             borderRadius: "20px",
             backgroundColor: originalBackground,
-            border: `4px dashed ${originalColor}`
+            border: `4px dashed ${originalColor}`,
         },
         new: {
             margin: "50px",
             borderRadius: "20px",
             backgroundColor: newBackground,
             border: `4px dashed ${newColor}`,
-            position: "absolute"
+            position: "absolute",
         },
         xAxis: {
             borderBottom: "1px solid red",
