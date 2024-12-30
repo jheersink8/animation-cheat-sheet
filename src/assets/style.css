@@ -4,6 +4,34 @@
     --gridInternalBorder: rgb(170, 182, 207);
 }
 
+.navbar {
+    color: rgb(231, 231, 231) !important;
+    background-color: rgb(70, 70, 78) !important;
+}
+
+.navbar-brand {
+    color: rgb(231, 231, 231) !important;
+}
+
+.nav-link {
+    border: 1px solid transparent !important; 
+    border-radius: 2px;
+    padding: 10px 18px 10px 18px !important;
+    transition: all .3s ease-in-out !important;
+}
+
+.nav-link:hover {
+    border: 1px solid white !important;
+    border-radius: 10px;
+}
+
+.click {
+    border: 1px solid rgb(163, 91, 91)  !important; 
+    border-radius: 10px;
+    padding: 10px 18px 10px 18px !important;
+    background-color: rgb(163, 91, 91) !important;
+}
+
 body {
     background-color: #242424 !important;
 }
@@ -54,5 +82,3 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-
