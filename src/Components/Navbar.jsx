@@ -1,4 +1,3 @@
-import { useState } from 'react';
 // Navlink Content//
 let navLinks = [
     { id: 1, plainText: "Home", componentName: "Home" },
@@ -9,8 +8,8 @@ let navLinks = [
     { id: 6, plainText: "Animations", componentName: "Animations" }]
 
 // Rendered List to create the Navbar//
-export default function Navbar() {
-    const [activeLink, setActiveLink] = useState('Home');
+export default function Navbar({ activeLink, setActiveLink }) {
+
     const listItems = navLinks.map(navLink => {
         function handleClick() {
             setActiveLink(navLink.componentName);
