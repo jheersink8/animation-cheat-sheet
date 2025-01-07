@@ -2,6 +2,7 @@ import './assets/style.css';
 import './assets/twoDimensionStyle.css';
 import './assets/threeDimensionalStyle.css';
 import './assets/thinkingThreeDimensionStyle.css';
+import './assets/transitions.css';
 
 import React from 'react';
 import { useState } from 'react';
@@ -14,7 +15,7 @@ import Transitions from './Components/Transitions';
 import Animations from './Components/Animations';
 
 export default function App() {
-  const [activeLink, setActiveLink] = useState('Home');
+  const [activeLink, setActiveLink] = useState('Transitions');
   return (
     <>
       <Navbar activeLink={activeLink} setActiveLink={setActiveLink} />

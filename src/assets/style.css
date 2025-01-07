@@ -82,3 +82,42 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* Transitions */
+.transitionIntro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 3px solid black; 
+    border-radius: 20px;
+    margin: 10px; 
+    width: 80%;
+}
+
+.transitionIntroBoxWithout {
+    border: 2px solid black; 
+    background-color: rgb(145, 145, 236);
+    padding: 13px 30px;
+    margin: 40px; 
+    text-align: center;
+}
+
+.transitionIntroBoxWithout:hover {
+    background-color: rgb(236, 145, 145);
+}
+
+.transitionIntroBoxWith {
+    border: 2px solid black; 
+    background-color: rgb(145, 145, 236);
+    padding: 13px 30px;
+    margin: 40px; 
+    transition: background-color 1.5s ease;
+    text-align: center;
+}
+
+.transitionIntroBoxWith:hover {
+    background-color: rgb(236, 145, 145);
+}
+
+
+

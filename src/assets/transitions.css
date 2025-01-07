@@ -1,0 +1,45 @@
+/* SVG */
+.startReactSVG {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+    transform: rotateY(5deg);
+}
+
+.endReactSVG {
+    background-color: rgb(204, 204, 204);
+    fill: rgb(201, 119, 119);
+    transform: rotateX(35deg) translateY(30px);
+}
+
+.backgroundColorChange {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+    transform: rotateY(5deg);
+    transition-property: background-color;
+}
+
+.backgroundColorChange:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+.fillChange {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+    transform: rotateY(5deg);
+    transition-property: fill;
+}
+
+.fillChange:hover {
+    fill: rgb(201, 119, 119);
+}
+
+.transformChange {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+    transform: rotateY(5deg);
+    transition-property: transform;
+}
+
+.transformChange:hover {
+    transform: rotateX(35deg) translateY(30px);
+}
