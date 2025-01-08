@@ -8,7 +8,14 @@
 .endReactSVG {
     background-color: rgb(204, 204, 204);
     fill: rgb(201, 119, 119);
-    transform: rotateX(35deg) translateY(30px);
+    transform: rotateX(35deg) ;
+}
+
+.hover {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 6px !important;
+    padding: 15px 0px;
 }
 
 .backgroundColorChange {
@@ -16,9 +23,10 @@
     fill: rgb(119, 147, 201);
     transform: rotateY(5deg);
     transition-property: background-color;
+    transition-duration: 1s;
 }
 
-.backgroundColorChange:hover {
+.hover:hover .backgroundColorChange {
     background-color: rgb(204, 204, 204);
 }
 
@@ -27,9 +35,10 @@
     fill: rgb(119, 147, 201);
     transform: rotateY(5deg);
     transition-property: fill;
+    transition-duration: 1s;
 }
 
-.fillChange:hover {
+.hover:hover .fillChange {
     fill: rgb(201, 119, 119);
 }
 
@@ -38,8 +47,24 @@
     fill: rgb(119, 147, 201);
     transform: rotateY(5deg);
     transition-property: transform;
+    transition-duration: 1s;
 }
 
-.transformChange:hover {
-    transform: rotateX(35deg) translateY(30px);
+.hover:hover .transformChange {
+    transform: rotateX(35deg) translateY(-30px);
+}
+
+.combineChange {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+    transform: rotateY(5deg);
+    transition-property: background-color, fill, transform;
+    transition-duration: 1s;
+}
+
+.hover:hover .combineChange {
+    background-color: rgb(204, 204, 204);
+    fill: rgb(201, 119, 119);
+    transform: rotateX(35deg) translateY(-30px);
+    transition-duration: 1s;
 }

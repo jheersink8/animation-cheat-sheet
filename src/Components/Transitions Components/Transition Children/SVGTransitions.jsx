@@ -9,7 +9,7 @@ export default function SVGTransitions({ start }) {
         parent: {
             border: "2px solid black",
             borderRadius: "10px",
-            margin: "50px",
+            margin: "20px",
     
         },
 

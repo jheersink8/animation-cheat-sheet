@@ -32,7 +32,7 @@ export default function TransitionStep1() {
                                 <span style={{ textDecoration: "line-through" }}>.we'll focus on this selector later</span> {'{'}<br></br>
                                 &nbsp;&nbsp;&nbsp;&nbsp;<span style={{ fontWeight: "bold" }}>background-color:</span> white;<br></br>
                                 &nbsp;&nbsp;&nbsp;&nbsp;<span style={{ fontWeight: "bold" }}>fill:</span> red;<br></br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<span style={{ fontWeight: "bold" }}>transform:</span> rotateX(35deg) translateY(30px);<br></br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style={{ fontWeight: "bold" }}>transform:</span> rotateX(35deg) translateY(-30px);<br></br>
                                 {'}'}
                             </code>
                         </div>
