@@ -18,6 +18,7 @@
     padding: 15px 0px;
 }
 
+/* Transition Property Transitions */
 .backgroundColorChange {
     background-color: rgb(65, 63, 63);
     fill: rgb(119, 147, 201);
@@ -67,4 +68,133 @@
     fill: rgb(201, 119, 119);
     transform: rotateX(35deg) translateY(-30px);
     transition-duration: 1s;
+}
+
+/* Timing Duration Transitions */
+.duration1 {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+    transform: rotateY(5deg);
+    transition-property: background-color, fill, transform;
+    transition-duration: 1s;
+}
+
+.duration2 {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+    transform: rotateY(5deg);
+    transition-property: background-color, fill, transform;
+    transition-duration: 2s;
+}
+
+.duration3 {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+    transform: rotateY(5deg);
+    transition-property: background-color, fill, transform;
+    transition-duration: 3s;
+}
+
+.duration4 {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+    transform: rotateY(5deg);
+    transition-property: background-color, fill, transform;
+    transition-duration: 4s;
+}
+
+.hover:hover .duration1, .hover:hover .duration2, .hover:hover .duration3, .hover:hover .duration4 {
+    background-color: rgb(204, 204, 204);
+    fill: rgb(201, 119, 119);
+    transform: rotateX(35deg) translateY(-30px);
+}
+
+/* Transition Timing Function Transitions */
+.ease {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+    transform: rotateY(5deg);
+    transition-property: background-color, fill, transform;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+.ease-in {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+    transform: rotateY(5deg);
+    transition-property: background-color, fill, transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
+.ease-out {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+    transform: rotateY(5deg);
+    transition-property: background-color, fill, transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+    transform: rotateY(5deg);
+    transition-property: background-color, fill, transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.hover:hover .ease, .hover:hover .ease-in, .hover:hover .ease-out, .hover:hover .ease-in-out {
+    background-color: rgb(204, 204, 204);
+    fill: rgb(201, 119, 119);
+    transform: rotateX(35deg) translateY(-30px);
+}
+
+/* Transition Delay Transitions */
+.delay0 {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+    transform: rotateY(5deg);
+    transition-property: background-color, fill, transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.delay1 {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+    transform: rotateY(5deg);
+    transition-property: background-color, fill, transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 1s;
+}
+
+.delay2 {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+    transform: rotateY(5deg);
+    transition-property: background-color, fill, transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 2s;
+}
+
+.delay3 {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+    transform: rotateY(5deg);
+    transition-property: background-color, fill, transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 3s;
+}
+
+.hover:hover .delay0, .hover:hover .delay1, .hover:hover .delay2, .hover:hover .delay3 {
+    background-color: rgb(204, 204, 204);
+    fill: rgb(201, 119, 119);
+    transform: rotateX(35deg) translateY(-30px);
 }
