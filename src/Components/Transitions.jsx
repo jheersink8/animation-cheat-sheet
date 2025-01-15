@@ -1,6 +1,7 @@
 import TransitionsIntroduction from './Transitions Components/TransitionsIntroduction';
 import TransitionStep1 from './Transitions Components/TransitionStep1';
 import TransitionStep2 from './Transitions Components/TransitionStep2';
+import TransitionStep3 from './Transitions Components/TransitionStep3';
 import SVGTransitions from './Transitions Components/Transition Children/SVGTransitions';
 
 export default function Transitions() {
@@ -12,6 +13,7 @@ export default function Transitions() {
                     <TransitionsIntroduction />
                     <TransitionStep1 />
                     <TransitionStep2 />
+                    <TransitionStep3 />
                 </div>
             </div >
         </>

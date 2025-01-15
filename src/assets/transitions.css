@@ -2,13 +2,12 @@
 .startReactSVG {
     background-color: rgb(65, 63, 63);
     fill: rgb(119, 147, 201);
-    transform: rotateY(5deg);
 }
 
 .endReactSVG {
     background-color: rgb(204, 204, 204);
     fill: rgb(201, 119, 119);
-    transform: rotateX(35deg) ;
+    transform: rotateX(35deg);
 }
 
 .hover {
@@ -22,7 +21,6 @@
 .backgroundColorChange {
     background-color: rgb(65, 63, 63);
     fill: rgb(119, 147, 201);
-    transform: rotateY(5deg);
     transition-property: background-color;
     transition-duration: 1s;
 }
@@ -34,7 +32,6 @@
 .fillChange {
     background-color: rgb(65, 63, 63);
     fill: rgb(119, 147, 201);
-    transform: rotateY(5deg);
     transition-property: fill;
     transition-duration: 1s;
 }
@@ -46,7 +43,6 @@
 .transformChange {
     background-color: rgb(65, 63, 63);
     fill: rgb(119, 147, 201);
-    transform: rotateY(5deg);
     transition-property: transform;
     transition-duration: 1s;
 }
@@ -58,7 +54,6 @@
 .combineChange {
     background-color: rgb(65, 63, 63);
     fill: rgb(119, 147, 201);
-    transform: rotateY(5deg);
     transition-property: background-color, fill, transform;
     transition-duration: 1s;
 }
@@ -74,7 +69,6 @@
 .duration1 {
     background-color: rgb(65, 63, 63);
     fill: rgb(119, 147, 201);
-    transform: rotateY(5deg);
     transition-property: background-color, fill, transform;
     transition-duration: 1s;
 }
@@ -82,7 +76,6 @@
 .duration2 {
     background-color: rgb(65, 63, 63);
     fill: rgb(119, 147, 201);
-    transform: rotateY(5deg);
     transition-property: background-color, fill, transform;
     transition-duration: 2s;
 }
@@ -90,7 +83,6 @@
 .duration3 {
     background-color: rgb(65, 63, 63);
     fill: rgb(119, 147, 201);
-    transform: rotateY(5deg);
     transition-property: background-color, fill, transform;
     transition-duration: 3s;
 }
@@ -98,12 +90,14 @@
 .duration4 {
     background-color: rgb(65, 63, 63);
     fill: rgb(119, 147, 201);
-    transform: rotateY(5deg);
     transition-property: background-color, fill, transform;
     transition-duration: 4s;
 }
 
-.hover:hover .duration1, .hover:hover .duration2, .hover:hover .duration3, .hover:hover .duration4 {
+.hover:hover .duration1,
+.hover:hover .duration2,
+.hover:hover .duration3,
+.hover:hover .duration4 {
     background-color: rgb(204, 204, 204);
     fill: rgb(201, 119, 119);
     transform: rotateX(35deg) translateY(-30px);
@@ -113,7 +107,6 @@
 .ease {
     background-color: rgb(65, 63, 63);
     fill: rgb(119, 147, 201);
-    transform: rotateY(5deg);
     transition-property: background-color, fill, transform;
     transition-duration: 2s;
     transition-timing-function: ease;
@@ -122,7 +115,6 @@
 .ease-in {
     background-color: rgb(65, 63, 63);
     fill: rgb(119, 147, 201);
-    transform: rotateY(5deg);
     transition-property: background-color, fill, transform;
     transition-duration: 2s;
     transition-timing-function: ease-in;
@@ -131,7 +123,6 @@
 .ease-out {
     background-color: rgb(65, 63, 63);
     fill: rgb(119, 147, 201);
-    transform: rotateY(5deg);
     transition-property: background-color, fill, transform;
     transition-duration: 2s;
     transition-timing-function: ease-out;
@@ -140,13 +131,15 @@
 .ease-in-out {
     background-color: rgb(65, 63, 63);
     fill: rgb(119, 147, 201);
-    transform: rotateY(5deg);
     transition-property: background-color, fill, transform;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
 }
 
-.hover:hover .ease, .hover:hover .ease-in, .hover:hover .ease-out, .hover:hover .ease-in-out {
+.hover:hover .ease,
+.hover:hover .ease-in,
+.hover:hover .ease-out,
+.hover:hover .ease-in-out {
     background-color: rgb(204, 204, 204);
     fill: rgb(201, 119, 119);
     transform: rotateX(35deg) translateY(-30px);
@@ -156,7 +149,6 @@
 .delay0 {
     background-color: rgb(65, 63, 63);
     fill: rgb(119, 147, 201);
-    transform: rotateY(5deg);
     transition-property: background-color, fill, transform;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
@@ -166,7 +158,6 @@
 .delay1 {
     background-color: rgb(65, 63, 63);
     fill: rgb(119, 147, 201);
-    transform: rotateY(5deg);
     transition-property: background-color, fill, transform;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
@@ -176,7 +167,6 @@
 .delay2 {
     background-color: rgb(65, 63, 63);
     fill: rgb(119, 147, 201);
-    transform: rotateY(5deg);
     transition-property: background-color, fill, transform;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
@@ -186,15 +176,82 @@
 .delay3 {
     background-color: rgb(65, 63, 63);
     fill: rgb(119, 147, 201);
-    transform: rotateY(5deg);
     transition-property: background-color, fill, transform;
     transition-duration: 2s;
     transition-timing-function: ease-in-out;
     transition-delay: 3s;
 }
 
-.hover:hover .delay0, .hover:hover .delay1, .hover:hover .delay2, .hover:hover .delay3 {
+.hover:hover .delay0,
+.hover:hover .delay1,
+.hover:hover .delay2,
+.hover:hover .delay3 {
     background-color: rgb(204, 204, 204);
     fill: rgb(201, 119, 119);
     transform: rotateX(35deg) translateY(-30px);
+}
+
+
+.shortHand {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+
+    transition: background-color 2s ease-in-out 1s,
+        fill 2s ease-in-out 1s,
+        transform 2s ease-in-out 1s;
+}
+
+.hover:hover .shortHand {
+    background-color: rgb(204, 204, 204);
+    fill: rgb(201, 119, 119);
+    transform: rotateX(35deg) translateY(-30px);
+}
+
+.CSSHover {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+    transition-property: background-color, fill, transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.CSSHover:hover {
+    background-color: rgb(204, 204, 204);
+    fill: rgb(201, 119, 119);
+    transform: rotateX(35deg) translateY(-30px);
+}
+
+.CSSActive {
+    background-color: rgb(65, 63, 63);
+    fill: rgb(119, 147, 201);
+    transition-property: background-color, fill, transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.CSSActive:active {
+    background-color: rgb(204, 204, 204);
+    fill: rgb(201, 119, 119);
+    transform: rotateX(35deg) translateY(-30px);
+}
+
+.JSBegin {
+    background-color: rgb(65, 63, 63);
+}
+
+.JSEnd {
+    background-color: rgb(65, 63, 63);
+}
+
+.JSSVGBegin {
+    fill: rgb(119, 147, 201);
+    transition: transform 1s ease-in, fill 1.2s ease-out 0.5s;
+}
+
+.JSSVGEnd {
+    transition: transform 1s ease-in, fill 1.2s ease-out 0.5s;
+    transform: rotate(180deg);
+    fill: rgb(146, 74, 74);
 }
