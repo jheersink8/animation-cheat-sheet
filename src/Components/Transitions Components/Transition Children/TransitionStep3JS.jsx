@@ -1,6 +1,6 @@
 import { useState } from "react";
 import SVGTransitions from "./SVGTransitions"
-import { TransitionCSSHover, TransitionCSSActive } from "./TransitionsCode";
+import { TransitionJSExplination, TransitionJSActive } from "./TransitionsCode";
 
 export default function TransitionStep3JS() {
     const [parentClass, setParentClass] = useState("JSBegin");
@@ -12,7 +12,7 @@ export default function TransitionStep3JS() {
 
     return (
         <>
-            {/* Transition-Property */}
+            {/* JS solutions */}
             <h3 className="cardAction">JavaScript Solutions</h3>
             <div className="cardContainer">
                 <h6 className="col-12 p-3">JavaScript based triggers offer more flexibility than CSS triggers. For example, you can assign the animation to a button (or any element that’s not the element you’re transitioning). For these demonstrations, we’ll simplify the transition slightly so that we can focus more on what’s happening with the trigger.<br></br><br></br>
@@ -21,19 +21,16 @@ export default function TransitionStep3JS() {
                 </h6>
                 <div className="row hover">
 
-                    <h5 className="col-6" style={{ textAlign: "center" }}>Class Change</h5>
-                    <h5 className="col-6" style={{ textAlign: "center" }}>:active (click and hold the image below)</h5>
+                    <h5 className="col-12" style={{ textAlign: "center" }}>Class Change</h5>
 
-                    <div className="col-6"><SVGTransitions start={parentClass} svgStart={svgClass} /></div>
-                    <div className="col-6"><SVGTransitions start={"CSSActive"} /></div>
+                    <div className="col-12"><SVGTransitions start={parentClass} svgStart={svgClass} /></div>
 
-                    <div className="col-6" style={{ display: "flex", justifyContent: "center" }}>
+                    <div className="col-12 mb-5" style={{ display: "flex", justifyContent: "center" }}>
                         <button style={{ width: "35%" }} onClick={runChangeClass}>Click Me!</button>
                     </div>
-                    <div className="col-6" style={{ display: "flex", justifyContent: "center" }}><button style={{ width: "35%" }}>Click Me!</button></div>
 
-                    {/* <TransitionCSSHover />
-                    <TransitionCSSActive /> */}
+                    <TransitionJSExplination />
+                    <TransitionJSActive />
 
                 </div>
             </div>
