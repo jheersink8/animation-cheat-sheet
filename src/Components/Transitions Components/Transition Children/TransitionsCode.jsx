@@ -273,7 +273,7 @@ function TransitionCSSActive() {
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transform 2s ease-in-out 0s;<br></br>
                 {'}'}
                 <br></br>
-                .selector<span className="emphasis">:focus</span> {'{'}<br></br>
+                .selector<span className="emphasis">:active</span> {'{'}<br></br>
                 &nbsp;&nbsp;&nbsp;&nbsp;<span style={{ fontWeight: "bold" }}>background-color:</span> white;<br></br>
                 &nbsp;&nbsp;&nbsp;&nbsp;<span style={{ fontWeight: "bold" }}>fill:</span> red;<br></br>
                 &nbsp;&nbsp;&nbsp;&nbsp;<span style={{ fontWeight: "bold" }}>transform:</span> rotateX(35deg) translateY(-30px);<br></br>

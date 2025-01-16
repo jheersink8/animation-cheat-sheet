@@ -15,7 +15,7 @@ import Transitions from './Components/Transitions';
 import Animations from './Components/Animations';
 
 export default function App() {
-  const [activeLink, setActiveLink] = useState('Transitions');
+  const [activeLink, setActiveLink] = useState('Animations');
   return (
     <>
       <Navbar activeLink={activeLink} setActiveLink={setActiveLink} />

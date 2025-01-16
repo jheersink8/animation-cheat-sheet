@@ -1,4 +1,4 @@
-export default function TransitionsIntroduction() {
+export default function AnimationsIntroduction() {
     return (
         <>
             <h3 className='cardDescription col-2'>Introduction</h3>
