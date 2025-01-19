@@ -7,7 +7,7 @@ export default function AnimationsIntroduction() {
             <div className='col-10'>
                 <div className='row'>
                     <h6 className='col-12 cardAction p-3' style={{ textAlign: "left" }}>Conceptually speaking, animations are very similar to transitions. They both allow you to apply movement to an element. However, transitions are limited to a definitive starting style and ending style. Animations, on the other hand, allow you to apply as many movements between the starting style and ending style (accomplished through something called keyframes). Animations allow for much more complex movements that just aren’t possible through transitions alone. <br></br><br></br>
-                        Below is an example of an element that can be animated solely through the use of the animation property.
+                        Below is an example of an element that can be animated through the use of the animation property.
                     </h6>
                     <div className='center cardContainer'>
                         <div className='transitionIntro'>
